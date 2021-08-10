@@ -1,5 +1,5 @@
-const conexao = require('../infraestructura/conexao')
-const uploadDeArquivo = require('../arquivos/uploadDeArquivos')
+const conexao = require('../infraestructura/database/conexao')
+const uploadDeArquivo = require('../infraestructura/arquivos/uploadDeArquivos')
 
 class Pet {
     adiciona(pet, res) {
@@ -22,7 +22,6 @@ class Pet {
                   res.status(200).json(novoPet)
               }
             })
-
 
         }
         
